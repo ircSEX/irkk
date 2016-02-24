@@ -59,7 +59,7 @@ public class IrcProtocolAdapter implements IrcProtocol {
      */
     private void handleReply(String reply) {
         String[] parts = reply.split(BLANK, 3);
-        Logger.log("irkksome", reply);
+        Logger.log("irkk<", reply);
         // Too few parts means that reply is not a valid IRC string.
         if (parts.length < 2) return;
         handlePing(parts);
@@ -165,7 +165,7 @@ public class IrcProtocolAdapter implements IrcProtocol {
 
     private void write(String s) {
         if (connection.isConnected()) {
-            Logger.log("irkksome", s);
+            Logger.log("irkk>", s);
             try {
                 connection.write(s + LINE_BREAK);
             } catch (IOException e) {

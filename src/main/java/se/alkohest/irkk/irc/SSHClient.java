@@ -116,7 +116,7 @@ public abstract class SSHClient implements ConnectionMonitor {
                 return true;
             }
         }
-        return false;
+        throw new ConnectionIOException(ConnectionIOException.ErrorPhase.AUTH, "Could not authenticate.");
     }
 
     protected abstract void postAuthAction() throws ConnectionIOException;

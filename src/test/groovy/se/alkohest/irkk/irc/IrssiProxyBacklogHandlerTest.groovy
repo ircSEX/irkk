@@ -12,10 +12,10 @@ class IrssiProxyBacklogHandlerTest extends Specification {
 
     def "test extractDate"() {
         String[] parts1 = ["", "PROXY", "start"]
-        String[] parts2 = ["", "", "asdfasdf :123"]
-        String[] parts3 = ["", "", "asdfasdf"]
+        String[] parts2 = ["irkksome", "", "asdfasdf :123"]
+        String[] parts3 = ["irkksome", "", "asdfasdf"]
         String[] parts4 = ["", "PROXY", "stop"]
-        String[] parts5 = ["", "", "asdfasdf :123"]
+        String[] parts5 = ["irkksome", "", "asdfasdf :123"]
 
         when:
         backlogHandler.extractDate(parts1)

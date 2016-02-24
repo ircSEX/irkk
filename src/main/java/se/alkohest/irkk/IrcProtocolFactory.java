@@ -1,10 +1,8 @@
-package se.alkohest.irkk.irc;
+package se.alkohest.irkk;
 
 import se.alkohest.irkk.entity.BaseConnection;
+import se.alkohest.irkk.irc.*;
 
-/**
- * Created by oed on 7/18/14.
- */
 public class IrcProtocolFactory {
 
     public static IrcProtocol getIrcProtocol(BaseConnection data) {
