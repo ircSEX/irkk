@@ -1,12 +1,11 @@
-package se.alkohest.irkksome.irc;
+package se.alkohest.irkk.irc;
 
 import com.trilead.ssh2.Session;
 
 import java.io.IOException;
 
-import se.alkohest.irkksome.entity.SSHConnection;
-import se.alkohest.irkksome.util.KeyEncodingUtil;
-import se.alkohest.irkksome.util.KeyProvider;
+import se.alkohest.irkk.entity.SSHConnection;
+import se.alkohest.irkk.util.KeyProvider;
 
 public class SSHKeyUploader extends SSHClient {
     public static final String ECHO_LITERAL = "echo -e ";

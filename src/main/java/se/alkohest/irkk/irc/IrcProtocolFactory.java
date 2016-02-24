@@ -1,6 +1,6 @@
-package se.alkohest.irkksome.irc;
+package se.alkohest.irkk.irc;
 
-import se.alkohest.irkksome.entity.BaseConnection;
+import se.alkohest.irkk.entity.BaseConnection;
 
 /**
  * Created by oed on 7/18/14.

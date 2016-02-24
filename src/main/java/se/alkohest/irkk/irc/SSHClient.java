@@ -1,4 +1,4 @@
-package se.alkohest.irkksome.irc;
+package se.alkohest.irkk.irc;
 
 import com.trilead.ssh2.Connection;
 import com.trilead.ssh2.ConnectionInfo;
@@ -11,9 +11,8 @@ import com.trilead.ssh2.log.Logger;
 import java.io.IOException;
 import java.util.Random;
 
-import se.alkohest.irkksome.entity.SSHConnection;
-import se.alkohest.irkksome.util.KeyEncodingUtil;
-import se.alkohest.irkksome.util.KeyProvider;
+import se.alkohest.irkk.entity.SSHConnection;
+import se.alkohest.irkk.util.KeyProvider;
 
 // test keys can be generated with
 // $ ssh-keygen -t rsa -b 1024 -f dummy-ssh-keygen.pem -N '' -C "keyname"
@@ -39,7 +38,7 @@ public abstract class SSHClient implements ConnectionMonitor {
             DebugLogger logger = new DebugLogger() {
                 @Override
                 public void log(int level, String className, String message) {
-                    se.alkohest.irkksome.util.Logger.log(TAG, message);
+                    se.alkohest.irkk.util.Logger.log(TAG, message);
                 }
             };
             Logger.enabled = true;
@@ -141,7 +140,7 @@ public abstract class SSHClient implements ConnectionMonitor {
     @Override
     public void connectionLost(Throwable reason) {
         closeAll();
-        se.alkohest.irkksome.util.Logger.log(TAG, "Connection lost: " + reason);
+        se.alkohest.irkk.util.Logger.log(TAG, "Connection lost: " + reason);
         // propagate up??
     }
 

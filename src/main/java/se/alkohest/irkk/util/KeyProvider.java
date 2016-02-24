@@ -1,4 +1,4 @@
-package se.alkohest.irkksome.util;
+package se.alkohest.irkk.util;
 
 import java.io.IOException;
 import java.security.Key;

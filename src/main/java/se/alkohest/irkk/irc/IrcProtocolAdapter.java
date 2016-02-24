@@ -1,6 +1,6 @@
-package se.alkohest.irkksome.irc;
+package se.alkohest.irkk.irc;
 
-import se.alkohest.irkksome.util.Logger;
+import se.alkohest.irkk.util.Logger;
 
 import java.io.IOException;
 import java.util.ArrayList;

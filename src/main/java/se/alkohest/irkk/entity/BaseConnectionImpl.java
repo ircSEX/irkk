@@ -1,4 +1,4 @@
-package se.alkohest.irkksome.entity;
+package se.alkohest.irkk.entity;
 
 public class BaseConnectionImpl implements BaseConnection {
     private int port;

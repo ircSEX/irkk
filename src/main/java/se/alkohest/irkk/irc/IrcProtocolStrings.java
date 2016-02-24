@@ -1,4 +1,4 @@
-package se.alkohest.irkksome.irc;
+package se.alkohest.irkk.irc;
 
 /**
  * Created by oed on 10/5/13.

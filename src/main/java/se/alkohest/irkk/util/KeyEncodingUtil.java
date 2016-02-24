@@ -1,4 +1,4 @@
-package se.alkohest.irkksome.util;
+package se.alkohest.irkk.util;
 
 import org.bouncycastle.openssl.PEMWriter;
 import org.bouncycastle.util.encoders.Base64;

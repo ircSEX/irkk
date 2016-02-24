@@ -1,4 +1,4 @@
-package se.alkohest.irkksome.entity;
+package se.alkohest.irkk.entity;
 
 public class SSHConnectionImpl implements SSHConnection {
     private String sshHost;

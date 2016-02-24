@@ -1,4 +1,4 @@
-package se.alkohest.irkksome.irc;
+package se.alkohest.irkk.irc;
 
 import java.util.Date;
 import java.util.List;

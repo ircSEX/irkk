@@ -1,10 +1,10 @@
-package se.alkohest.irkksome.irc;
+package se.alkohest.irkk.irc;
 
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 
-import se.alkohest.irkksome.entity.BaseConnection;
+import se.alkohest.irkk.entity.BaseConnection;
 
 public class SSHIrkkForwarder extends SSHClient implements ServerConnection {
     private ServerConnection forwardingConnection;

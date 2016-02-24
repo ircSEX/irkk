@@ -1,4 +1,4 @@
-package se.alkohest.irkksome.irc;
+package se.alkohest.irkk.irc;
 
 /**
  * This interface is used to communicate with IRC.
