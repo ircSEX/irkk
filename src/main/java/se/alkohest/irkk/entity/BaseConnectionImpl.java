@@ -5,11 +5,11 @@ public class BaseConnectionImpl implements BaseConnection {
     private String host;
     private SSHConnection sshConnection;
 
-    public BaseConnectionImpl(int port, String host) {
-        this(port, host, null);
+    public BaseConnectionImpl(String host, int port) {
+        this(host, port, null);
     }
 
-    public BaseConnectionImpl(int port, String host, SSHConnection sshConnection) {
+    public BaseConnectionImpl(String host, int port, SSHConnection sshConnection) {
         this.port = port;
         this.host = host;
         this.sshConnection = sshConnection;
