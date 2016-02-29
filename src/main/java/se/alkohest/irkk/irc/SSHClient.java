@@ -21,7 +21,7 @@ public abstract class SSHClient implements ConnectionMonitor {
     public static final String AUTH_PASSWORD = "password";
     public static final String TAG = "irkksomeSSH";
     private static final Random PORTFORWARD_RANDOM = new Random();
-    private static final boolean DEBUG_SSH = true;
+    private static final boolean DEBUG_SSH = false;
     private static final int MIN_PORT = 49152;
     private static final int MAX_PORT = 65535;
     private static final int AUTH_ATTEMPTS = 4;
@@ -45,7 +45,6 @@ public abstract class SSHClient implements ConnectionMonitor {
             Logger.logger = logger;
         }
     }
-
 
     public SSHClient(SSHConnection data) {
         this.sshConnectionData = data;

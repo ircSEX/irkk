@@ -10,9 +10,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created by oed on 7/18/14.
- */
 public class IrcProtocolAdapter implements IrcProtocol {
     private static final String BLANK = " ";
     private static final String EMPTY = "";
@@ -60,10 +57,14 @@ public class IrcProtocolAdapter implements IrcProtocol {
     private void handleReply(String reply) {
         String[] parts = reply.split(BLANK, 3);
         Logger.log("irkk<", reply);
-        // Too few parts means that reply is not a valid IRC string.
+        // Too few parts means that reply is not a well formed IRC string.
         if (parts.length < 2) return;
+
         handlePing(parts);
 
+        // TODO: This is not good. See also the tests in the backlog integration test.
+        // 1. The control sequences for backlog handling could (should) be separated from date parsing
+        // 2. Live messages received during playback should be put on a queue in order to be sent upwards sequentially (depends on the contract with listeners)
         Date time = backlogHandler.extractDate(parts);
 
         switch (parts[1]) {
